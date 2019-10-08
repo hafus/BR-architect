@@ -1,0 +1,112 @@
+:root{
+/*    background colors*/
+    --main-bg-color: #fff;
+    --secondary-bg-color: #000;
+    
+/*    text colors*/
+    --main-text-color: #000;
+    --secondary-text-color: #fff;
+    
+/*    button background*/
+    --btn-bg-color: #f1f1f1;
+    --btn-secondary-bg-color: #000;
+    --btn-secondary-text-color: #fff;
+    
+/*    hover color*/
+    --hover-color: #000;
+    --hover-bg-color: #ccc;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    text-align: inherit;
+    
+}
+
+.navbar-brand{
+    font-size: inherit;
+}
+
+
+.bg-light{
+    background-color: var(--main-bg-color) !important;
+}
+
+nav{
+    letter-spacing: 4px;
+/*    font-size: 1.25rem !important;*/
+}
+
+.navbar-light .navbar-brand{
+    color: var(--main-text-color);
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: var(--main-text-color);
+}
+
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--hover-color);
+    background-color: var(--hover-bg-color);
+}
+
+section{
+    min-height: 100vh;
+}
+
+#home{
+    background-image:
+        url('./assets/architect.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+#home strong{
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+    opacity: 0.75;
+}
+
+#projects .card-title{
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+    
+}
+
+.btn-contact{
+    font-size: inherit;
+    background-color: var(--btn-bg-color);
+}
+
+.btn-contact:hover{
+    background-color: var(--hover-bg-color);
+    color: var(--hover-color);
+}
+
+.team img{
+    filter: grayscale(70%);
+}
+
+#contact button{
+    background-color: var(--btn-secondary-bg-color);
+    color: var(--btn-secondary-text-color);
+}
+
+#contact img{
+    filter: contrast(80%);
+}
+
+.footer{
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
+}
+/*utlity class*/
+
+.pt-64{
+    padding-top: 64px;
+}
